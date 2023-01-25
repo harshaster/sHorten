@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Error !</title>
+</head>
+<body>
+    {% if code==500 %}
+    <h3>Sorry server has encountered an error. Come back later !</h3>
+
+    {% elif code==404 %}
+    <h3>Page not found ! </h3>
+
+    {% elif code==400 %}
+    <h3>Invalid link </h3>
+    {% endif %}
+
+</body>
+</html>
